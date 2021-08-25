@@ -1,14 +1,10 @@
 .address__content{
-    // background-color: red;
     grid-column: leftfr-start / col-end 4;
     margin: 10rem 10rem;
 
     display: grid;
     grid-template-columns: 5rem 25rem 5rem 25rem;
-    // grid-template-columns: repeat(auto-fit, minmax(30rem, 5rem));
-    // grid-template-columns: min-content minmax(min-content, 30rem) min-content minmax(min-content, 30rem);
     grid-template-rows: repeat(auto-fit, minmax(5rem, 1fr));
-    // grid-template-rows: repeat(2, minmax(10rem, min-content )) 50rem;
     grid-gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -18,7 +14,6 @@
         margin: 5rem 5rem 5rem 5rem;
         padding: 5rem;
         display: grid;
-        // grid-template-rows: repeat(5, minmax(1fr, 1fr));
         grid-gap: 1rem;
         justify-content: center;
         align-items: center;
@@ -29,7 +24,6 @@
         margin: 0;
         padding: 5rem;
         display: grid;
-        // grid-template-rows: repeat(5, minmax(1fr, 1fr));
         grid-gap: 1rem;
         justify-content: center;
         align-items: center;
@@ -40,7 +34,6 @@
         margin: 0;
         padding: 5rem;
         display: grid;
-        // grid-template-rows: repeat(5, minmax(1fr, 1fr));
         grid-gap: 1rem;
         justify-content: center;
         align-items: center;
@@ -79,8 +72,6 @@
     font-size: 1.6rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    // word-wrap: break-word;
-    // word-break: break-all;
 
     @media only screen and (max-width: 81.25em){
         grid-column: 1 / 2;
@@ -146,18 +137,12 @@
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     font-size: 1.6rem;
-    // padding: 5rem 0;
-    // margin-top: -1rem;
-
     @media only screen and (max-width: 81.25em){
         grid-column: 2 / 3;
         grid-row: 4 / 5;
     }
 }
 
-// em{
-//     font-size: 2rem;
-// }
 
 .google-map{
     grid-column: 1 / 5;
@@ -165,7 +150,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    // height: 0;
     overflow: hidden;
 
     &__frame{
