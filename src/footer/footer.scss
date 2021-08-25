@@ -1,0 +1,27 @@
+.footer{
+    background-color: #064c5c;
+    grid-column: leftfr-start / rightfr-end;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.profile__link{
+    
+    &:link,
+    &:visited{
+        // list-style: none;
+        color: #fff;
+        text-decoration: none;
+        // text-transform: uppercase;
+        text-align: center;
+        // padding: 1.5rem;
+        // display: block;
+        transition: all 0.25s;
+    }
+    &:hover,
+    &:active{
+        background-color: rgba(#fff, 0.3);
+        // transform: translateY(-5px);
+    }
+}

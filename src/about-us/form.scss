@@ -1,0 +1,109 @@
+.form__area{
+    background-color: #528f9c;
+    grid-column: col-start 5 / rightfr-end;
+    margin: 10rem 10rem;
+
+    display: grid;
+    grid-template-rows: 10rem 25rem 10rem;
+    padding: 10rem;
+    align-content: center;
+
+    @media only screen and (max-width: 81.25em){
+        padding: 5rem;
+    }
+
+    @media only screen and (max-width: 62.5em){
+        margin: 3rem;
+    }
+}
+
+.form__container{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+.form{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 1rem;
+
+    @media only screen and (max-width: 62.5em){
+        // grid-template-columns: repeat(3, 5vw);
+        grid-template-rows: repeat(5, min-content);
+        grid-row-gap: 2rem;
+    }
+}
+.form__heading{
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    font-size: 4rem;
+    place-self: center;
+    color: #064c5c;
+
+    @media only screen and (max-width: 81.25em){
+       font-size: 3rem;
+    }
+    @media only screen and (max-width: 62.25em){
+       font-size: 2rem;
+    }
+}
+
+.input__name-wrapper{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+.input__email-wrapper{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.input__contact-wrapper{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+}
+
+.form__submit{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+
+    @media only screen and (max-width: 62.5em){
+        padding: 1rem 1.5rem;
+        font-size: 1.6rem;
+        // grid-column: 2 / 3;
+    }
+}
+.input-fields{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25s;
+    &:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+        border-bottom: 3px solid #064c5c;
+
+    }
+    &::-webkit-input-placeholder{
+        color: #b1b1b1;
+    }
+    @media only screen and (max-width: 62.5em){
+        // padding: .75rem;
+        // width: 80%;
+    }
+
+    // &:focus:invalid{
+    //     border-bottom: 3px solid #d6601c;
+    // }
+}
+
+.form__submission{
+    margin: 2rem 0;
+    background-color: white;
+    font-size: 2rem;
+    color: #064c5c;
+    text-align: center;
+}

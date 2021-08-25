@@ -1,0 +1,141 @@
+$color-primary: #064c5c;
+
+.review{
+  
+    &__image{
+        background-color: #064c5c;
+        grid-column: leftfr-start / col-end 4;
+
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 2rem;
+        @media only screen and (max-width: 62.5em){
+            grid-column: 1 / -1;
+            padding: 5rem;
+        }
+        .review__image-1{
+            grid-column: 2 / 8;
+            grid-row: 2 / 8;
+            box-shadow: 0 0 4rem rgba(#000, 0.4);
+            transition: all 0.25s;
+            background: url('../img/review-kitchen.jpg');
+            background-size: cover;
+
+            &:hover{
+                transform: rotate(-5deg) scale(1.15);
+            }
+            @media only screen and (max-width: 62.5em){
+                grid-column: 1 / 5;
+                grid-row: 1 / -1;
+                padding: 5rem;
+            }
+        }
+        .review__image-2{
+            visibility: hidden;
+            grid-column: 5 / 8;
+            grid-row: 2 / 8;
+            box-shadow: 0 0 4rem rgba(#000, 0.4);
+            transition: all 0.25s;
+            background: url('../img/review-kitchen-1.jpg');
+            background-size: cover;
+            
+            &:hover{
+                transform: rotate(-5deg) scale(1.15);
+            }
+            @media only screen and (max-width: 62.5em){
+                visibility: visible;
+                grid-column: 5 / -1;
+                grid-row: 1 / -1;
+                padding: 5rem;
+            }
+        }
+    }
+    
+}
+
+.review__comment{
+    background-color: #528f9c;
+    grid-column: col-start 5 / rightfr-end;
+    padding: 6rem 6vw;
+
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    color: #fff;
+
+    @media only screen and (max-width: 62.5em){
+        grid-column: 1 / -1;
+        padding: 5rem;
+    }
+    
+}
+.review__text{
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: 81.25em){
+        font-size: 1.6rem;
+    }
+}
+
+.heading-2{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: 81.25em){
+        // font-size: 3.5rem;
+    }
+}
+
+.heading-3{
+    font-weight: bold;
+    font-size: 4rem;
+    // line-height: 3rem;
+
+    @media only screen and (max-width: 81.25em){
+        font-size: 3rem;
+    }
+}
+
+span{
+    font-weight: 100;
+}
+
+.btn{
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.75rem 3.5rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    border: 1px solid transparent;
+    box-shadow: 0 0 2rem rgba(0,0,0, 0.4);
+    text-decoration: none;
+
+    &:hover{
+        background-color: #528f9c;
+        transform: translateY(-2px);
+        border: 1px solid $color-primary;
+
+    }
+    &:active{
+        box-shadow: 0 0 1rem rgba(0,0,0, 0.2);
+        transform: translateY(3px);
+
+    }
+}
+.btn__review{
+
+    @media only screen and (max-width: 81.25em){
+        font-size: 1.6rem;
+        padding: 1.75rem 4rem;
+    }
+}

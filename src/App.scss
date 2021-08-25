@@ -1,0 +1,59 @@
+
+/* Color Variable */
+$color-primary: #4d4d4d;
+
+
+.App{
+    display: grid;
+
+    grid-template-rows: 10rem 90vh min-content 70vh repeat(5, min-content);
+    grid-template-columns: [leftfr-start] 1fr [leftfr-end full-start]
+                            repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+                            [full-end rightfr-start] 1fr [rightfr-end];
+
+                            @media only screen and (max-width: 31.25em){
+                                grid-template-rows: 10rem 90vh min-content 50vh repeat(5, min-content);
+
+                            }
+    /* //It will occupy 80vh always no matter the scrren size */
+    /* grid-template-rows:  80vh min-content 40vw repeat(3, min-content);    */
+
+     /*repeat 8 columns and we want the width of these columns between their minimum content
+     and max 14rems. Now, the column width wont exceed the 14rem width*/
+    /* grid-template-columns: [full-start] minmax(6rem, 1fr)
+     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
+      minmax(6rem, 1fr) [full-end]; */
+
+}
+
+/*selcting direct child of parent container*/
+.App > * {
+    // font-size: 3rem;
+    padding: 4rem;
+}
+
+.btn{
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.75rem 3.5rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    border: 1px solid transparent;
+    box-shadow: 0 0 2rem rgba(0,0,0, 0.4);
+
+    &:hover{
+        background-color: #528f9c;
+        transform: translateY(-2px);
+        border: 1px solid $color-primary;
+
+    }
+    &:active{
+        box-shadow: 0 0 1rem rgba(0,0,0, 0.2);
+        transform: translateY(3px);
+
+    }
+}
