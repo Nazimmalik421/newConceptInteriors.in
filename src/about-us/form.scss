@@ -31,7 +31,6 @@
     grid-row-gap: 1rem;
 
     @media only screen and (max-width: 62.5em){
-        // grid-template-columns: repeat(3, 5vw);
         grid-template-rows: repeat(5, min-content);
         grid-row-gap: 2rem;
     }
@@ -72,7 +71,6 @@
     @media only screen and (max-width: 62.5em){
         padding: 1rem 1.5rem;
         font-size: 1.6rem;
-        // grid-column: 2 / 3;
     }
 }
 .input-fields{
@@ -91,13 +89,8 @@
         color: #b1b1b1;
     }
     @media only screen and (max-width: 62.5em){
-        // padding: .75rem;
-        // width: 80%;
     }
 
-    // &:focus:invalid{
-    //     border-bottom: 3px solid #d6601c;
-    // }
 }
 
 .form__submission{
