@@ -26,13 +26,6 @@ const Form = () => {
     const formSubmitHandler = (e) => {
         e.preventDefault()
         if (name.trim().length !== '' && email.trim().length !== '') {
-
-            // const formData = {
-            //     personName: name,
-            //     email: email,
-            //     contact: contact
-            // }
-            // console.log(formData)
         }
         setName('')
         setEmail('')
